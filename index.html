@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web3知识库</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-dark-mode@1.0.0/dist/style.min.css">
+    <style>
+        body, h1, h2, h3, code, pre {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">加载中...</div>
+
+<!-- GitHub Corner -->
+<a href="https://github.com/raintweb3/rainweb3.github.io" class="github-corner" aria-label="View source on GitHub">
+    <svg viewBox="0 0 250 250" width="40" height="40">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.2 125.5,87.2 C122.9,97.4 130.2,105.8 134.5,103.6 C139.0,101.4 139.0,93.5 139.0,93.5 C139.0,82.0 141.0,73.5 141.0,73.5 C141.0,70.7 138.5,68.0 135.0,68.0 C131.0,68.0 128.0,71.0 128.0,71.0 C128.0,71.0 128.3,109.0 128.3,109.0 Z" fill="currentColor"></path>
+    </svg>
+</a>
+<style>
+    .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; }
+    @keyframes octocat-wave {
+        0%, 100% { transform: rotate(0); }
+        20%, 60% { transform: rotate(-25deg); }
+        40%, 80% { transform: rotate(10deg); }
+    }
+</style>
+
+<!-- ✅ 1. 核心 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+
+<!-- ✅ 2. 插件（顺序关键） -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@1.0.0/dist/docsify-copy-code.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify-dark-mode@1.0.0/dist/index.min.js"></script>
+
+<!-- ✅ 3. 配置 -->
+<script>
+    window.$docsify = {
+        name: 'Web3知识库',
+        repo: 'https://github.com/rainweb3/rainweb3.github.io',
+        loadSidebar: true,
+        auto2top: true,
+        routerMode: 'history',
+        themeColor: '#42b983',
+        copyCode: true,
+        darkMode: true,
+        darkModeSwitch: true
+    };
+</script>
+
+</body>
+</html>
