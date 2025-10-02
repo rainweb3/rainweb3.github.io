@@ -1,11 +1,13 @@
 # **Hardhat 智能合约开发环境搭建与配置指南（基于 Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版）**
 
 > **版本：v4.8.0**  
-> **最后更新时间：2025年9月6日**  
+> **最后更新时间：2025年10月3日**
 > **目标：规避 `hardhat@3.x` 的兼容性问题，精准锁定稳定版 `v2.26.3`，确保在 Node.js v20.18.0 环境下构建无冲突、可部署、可维护的 TypeScript 项目。**
 
 ---
-
+快速上手-可访问下载此模版项目：[v2.26.3 hardhat-project-template](https://github.com/rainweb3/hardhat-project-template/tree/main)
+下载后-先执行：npm run reinstall（安装node_modules）
+---
 ## 📚 目录（点击跳转）
 
 - [🔧 一、环境准备（Node.js v20.18.0 稳定适配）](#-一环境准备nodejs-v20180-稳定适配)
@@ -1456,7 +1458,7 @@ ls artifacts/contracts/
 
 ---
 
-> 📝 **文档更新时间：2025年9月6日**  
+> 📝 **文档更新时间：2025年10月3日**  
 > 适用于 Hardhat 2.x + TypeScript 项目  
 --- 
 
@@ -1467,14 +1469,14 @@ ls artifacts/contracts/
 # 📚 Hardhat 项目中 ESLint & Prettier 集成问题全记录  
 ## —— 从 `npm run lint` 报错到最终稳定方案的完整复盘（2025 精确版）
 
-> **作者**：开发复盘文档  
-> **时间**：2025年9月6日  
+> **作者**：Rain  
+> **时间**：2025年10月3日  
 > **目标**：完整还原在 **Hardhat + TypeScript** 项目中，从 `npm run lint` 报错出发，经历 Solhint 替代 → 验证失败 → 回归 ESLint → 版本冲突排查 → 最终稳定配置的全过程。  
 > **特别强调**：**`hardhat@2.26.3` 与 `ESLint v9` 不兼容，必须使用 `ESLint v8`**。
 
 ---
 
-## 🧭 完整问题演进脉络图（含真实配置与对话流）
+## 🧭 完整问题演进脉络图
 
 ```text
 1. 起点：npm run lint 执行报错（ESLint 无法处理 .sol）
@@ -1516,10 +1518,6 @@ Error: Failed to load plugin "solidity" declared in ".eslintrc.js": Cannot find 
 ```bash
 Error: Parsing error: The keyword 'pragma' is reserved
 ```
-
-### 📌 用户原始提问
-> “我运行 `npm run lint`，提示 ESLint 找不到 solidity 插件，怎么办？”
-
 ---
 
 ## 2️⃣ 尝试方案 A：引入 `solhint` 作为替代方案
