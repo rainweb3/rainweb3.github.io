@@ -1,4 +1,5 @@
 - [🏠 首页](/)
 ---
-- [📚 使用 GitHub + Docsify 搭建个人知识库网站](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20%E4%BD%BF%E7%94%A8%20GitHub%20%2B%20Docsify%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%BD%91%E7%AB%99.md)
+- [📚 GitHub知识库搭建指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20%E4%BD%BF%E7%94%A8%20GitHub%20+%20Docsify%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%BD%91%E7%AB%99.md)
 ---
+- [Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版部署指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
