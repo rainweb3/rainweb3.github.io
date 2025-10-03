@@ -6,3 +6,5 @@
 ---
 - [2025年web3钱包-主流公链测试网及领水完整配置指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/2025%E5%B9%B4web3%E9%92%B1%E5%8C%85-%E4%B8%BB%E6%B5%81%E5%85%AC%E9%93%BE%E6%B5%8B%E8%AF%95%E7%BD%91%E5%8F%8A%E9%A2%86%E6%B0%B4%E5%AE%8C%E6%95%B4%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
 ---
+- [ ethers.js v5 与 v6 完全对比指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/ethers.js%20v5%20%E4%B8%8E%20v6%20%E5%AE%8C%E5%85%A8%E5%AF%B9%E6%AF%94%E6%8C%87%E5%8D%97.md)
+---
