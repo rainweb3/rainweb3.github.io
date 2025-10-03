@@ -1,10 +1,18 @@
 - [🏠 首页](/)
 ---
-- [📚 GitHub知识库搭建指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20%E4%BD%BF%E7%94%A8%20GitHub%20+%20Docsify%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%BD%91%E7%AB%99.md)
----
 - [Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版部署指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
+---
+- [Hardhat v2.26.3 + Node.js v20.18.0精准稳定版配置信息](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF.md)
+---
+- [📚 GitHub知识库搭建指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20%E4%BD%BF%E7%94%A8%20GitHub%20+%20Docsify%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%BD%91%E7%AB%99.md)
 ---
 - [2025年web3钱包-主流公链测试网及领水完整配置指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/2025%E5%B9%B4web3%E9%92%B1%E5%8C%85-%E4%B8%BB%E6%B5%81%E5%85%AC%E9%93%BE%E6%B5%8B%E8%AF%95%E7%BD%91%E5%8F%8A%E9%A2%86%E6%B0%B4%E5%AE%8C%E6%95%B4%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
 ---
 - [ ethers.js v5 与 v6 完全对比指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/ethers.js%20v5%20%E4%B8%8E%20v6%20%E5%AE%8C%E5%85%A8%E5%AF%B9%E6%AF%94%E6%8C%87%E5%8D%97.md)
+---
+- [Anaconda3-2025.06-0-Windows-x86_64.exe 全流程操作指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%90%8D%20Anaconda3-2025.06-0-Windows-x86_64.exe%20%E5%85%A8%E6%B5%81%E7%A8%8B%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97.md)
+---
+- [NVM（nvm-windows）卸载重装及配置指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/NVM%EF%BC%88nvm-windows%EF%BC%89%E5%8D%B8%E8%BD%BD%E9%87%8D%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
+---
+- [科学上网影响Git登录和提交的解决方案](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%BD%B1%E5%93%8DGit%E7%99%BB%E5%BD%95%E5%92%8C%E6%8F%90%E4%BA%A4%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 ---
