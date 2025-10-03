@@ -3,3 +3,6 @@
 - [📚 GitHub知识库搭建指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20%E4%BD%BF%E7%94%A8%20GitHub%20+%20Docsify%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%BD%91%E7%AB%99.md)
 ---
 - [Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版部署指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
+---
+- [2025年web3钱包-主流公链测试网及领水完整配置指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/2025%E5%B9%B4web3%E9%92%B1%E5%8C%85-%E4%B8%BB%E6%B5%81%E5%85%AC%E9%93%BE%E6%B5%8B%E8%AF%95%E7%BD%91%E5%8F%8A%E9%A2%86%E6%B0%B4%E5%AE%8C%E6%95%B4%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
+---
