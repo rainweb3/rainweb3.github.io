@@ -16,3 +16,5 @@
 ---
 - [科学上网影响Git登录和提交的解决方案](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%BD%B1%E5%93%8DGit%E7%99%BB%E5%BD%95%E5%92%8C%E6%8F%90%E4%BA%A4%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 ---
+- [《Web3.0 全解析：从起源到未来——Web2 与 Web3 的演进、对比与共存》](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Web3.0%20%E5%85%A8%E8%A7%A3%E6%9E%90-%E4%BB%8E%E8%B5%B7%E6%BA%90%E5%88%B0%E6%9C%AA%E6%9D%A5%E2%80%94%E2%80%94Web2%20%E4%B8%8E%20Web3%20%E7%9A%84%E6%BC%94%E8%BF%9B-%E5%AF%B9%E6%AF%94%E4%B8%8E%E5%85%B1%E5%AD%98.md)
+---
