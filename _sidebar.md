@@ -2,6 +2,16 @@
 ---
 - [📚 GitHub知识库搭建指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20%E4%BD%BF%E7%94%A8%20GitHub%20+%20Docsify%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%BD%91%E7%AB%99.md)
 ---
+- [以太坊单位体系详解：Gas 与 Wei 的关系](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E5%8D%95%E4%BD%8D%E4%BD%93%E7%B3%BB%E8%AF%A6%E8%A7%A3%EF%BC%9AGas%20%E4%B8%8E%20Wei%20%E7%9A%84%E5%85%B3%E7%B3%BB%EF%BC%88%E6%B8%85%E6%99%B0%E6%A2%B3%E7%90%86%E7%89%88%EF%BC%89.md)
+---
+- [EIP-1559：以太坊 Gas 费机制的重大改进](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/EIP-1559%EF%BC%9A%E4%BB%A5%E5%A4%AA%E5%9D%8A%20Gas%20%E8%B4%B9%E6%9C%BA%E5%88%B6%E7%9A%84%E9%87%8D%E5%A4%A7%E6%94%B9%E8%BF%9B.md)
+---
+- [比特币与以太坊的签名机制及 EIP-1559 详解.md](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%E6%AF%94%E7%89%B9%E5%B8%81%E4%B8%8E%E4%BB%A5%E5%A4%AA%E5%9D%8A%E7%9A%84%E7%AD%BE%E5%90%8D%E6%9C%BA%E5%88%B6%E5%8F%8A%20EIP-1559%20%E8%AF%A6%E8%A7%A3.md)
+---
+- [Solidity中Unicode字符串处理规则详解](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Solidity%E4%B8%ADUnicode%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E8%A7%84%E5%88%99%E8%AF%A6%E8%A7%A3.md)
+---
+- [Solidity自定义错误（Custom Errors）详解](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Solidity%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%99%E8%AF%AF%EF%BC%88Custom%20Errors%EF%BC%89%E8%AF%A6%E8%A7%A3.md)
+---
 - [2025年web3钱包-主流公链测试网及领水完整配置指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/2025%E5%B9%B4web3%E9%92%B1%E5%8C%85-%E4%B8%BB%E6%B5%81%E5%85%AC%E9%93%BE%E6%B5%8B%E8%AF%95%E7%BD%91%E5%8F%8A%E9%A2%86%E6%B0%B4%E5%AE%8C%E6%95%B4%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97.md)
 ---
 - [《Web3.0 全解析：从起源到未来——Web2 与 Web3 的演进、对比与共存》](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Web3.0%20%E5%85%A8%E8%A7%A3%E6%9E%90-%E4%BB%8E%E8%B5%B7%E6%BA%90%E5%88%B0%E6%9C%AA%E6%9D%A5%E2%80%94%E2%80%94Web2%20%E4%B8%8E%20Web3%20%E7%9A%84%E6%BC%94%E8%BF%9B-%E5%AF%B9%E6%AF%94%E4%B8%8E%E5%85%B1%E5%AD%98.md)
@@ -24,3 +34,56 @@
 ---
 - [科学上网影响Git登录和提交的解决方案](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%BD%B1%E5%93%8DGit%E7%99%BB%E5%BD%95%E5%92%8C%E6%8F%90%E4%BA%A4%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 ---
+- [Ubuntu系统下Git配置与代码推送完整流程](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Ubuntu%E7%B3%BB%E7%BB%9F%E4%B8%8BGit%E9%85%8D%E7%BD%AE%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%8E%A8%E9%80%81%E5%AE%8C%E6%95%B4%E6%B5%81%E7%A8%8B.md)
+---
+- [Windows下安装WLS-Ubuntu子系统+Node.js+Solidity 开发环境全流程指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Windows%E4%B8%8B%E5%AE%89%E8%A3%85WLS-Ubuntu%E5%AD%90%E7%B3%BB%E7%BB%9F%2BNode.js%2BSolidity%20%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%85%A8%E6%B5%81%E7%A8%8B%E6%8C%87%E5%8D%97.md)
+---
+- [Ganache+Solidity智能合约开发全流程指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%9B%A0%20Ganache%2BSolidity%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E5%BC%80%E5%8F%91%E5%85%A8%E6%B5%81%E7%A8%8B%E6%8C%87%E5%8D%97.md)
+---
+- [Ubuntu系统下Node.js-npm-pnpm-Yarn安装更新升级指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Ubuntu%E7%B3%BB%E7%BB%9F%E4%B8%8BNode.js-npm-pnpm-Yarn%E5%AE%89%E8%A3%85%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7%E6%8C%87%E5%8D%97.md)
+---
+- [Windows系统下Node.js-npm-Yarn-pnpm安装更新升级指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Windows%E7%B3%BB%E7%BB%9F%E4%B8%8BNode.js-npm-Yarn-pnpm%E5%AE%89%E8%A3%85%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7%E6%8C%87%E5%8D%97.md)
+---
+- [VS Code 首选项设置命令详解：区别-功能与分类](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/VS%20Code%20%E9%A6%96%E9%80%89%E9%A1%B9%E8%AE%BE%E7%BD%AE%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3%EF%BC%9A%E5%8C%BA%E5%88%AB-%E5%8A%9F%E8%83%BD%E4%B8%8E%E5%88%86%E7%B1%BB.md)
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
