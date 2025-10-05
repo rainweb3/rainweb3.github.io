@@ -8,6 +8,8 @@
 ---
 - [Web3 全栈技术栈分析指南](https://github.com/rainweb3/rainweb3.github.io/edit/main/web3_doc/Web3%20%E5%85%A8%E6%A0%88%E6%8A%80%E6%9C%AF%E6%A0%88%E5%88%86%E6%9E%90%E6%8C%87%E5%8D%97.md)
 ---
+- [Web3 用户体验：Gas 费用估算与交易成功率优化指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%93%9A%20Web3%20%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%EF%BC%9AGas%20%E8%B4%B9%E7%94%A8%E4%BC%B0%E7%AE%97%E4%B8%8E%E4%BA%A4%E6%98%93%E6%88%90%E5%8A%9F%E7%8E%87%E4%BC%98%E5%8C%96%E6%8C%87%E5%8D%97.md)
+---
 - [Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版部署指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
 ---
 - [Hardhat v2.26.3 + Node.js v20.18.0精准稳定版配置信息](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF.md)
