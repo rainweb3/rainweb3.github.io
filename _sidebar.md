@@ -22,6 +22,11 @@
 ---
 - [Gas费实时数据与历史趋势查询权威指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/%F0%9F%94%8D%20Gas%E8%B4%B9%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E4%B8%8E%E5%8E%86%E5%8F%B2%E8%B6%8B%E5%8A%BF%E6%9F%A5%E8%AF%A2%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97%EF%BC%882025%20%E6%9C%80%E6%96%B0%E7%89%88%EF%BC%89.md)
 ---
+- [node-npm-Hardhat3-基础版安装-V1](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/node-npm-Hardhat3-%E5%9F%BA%E7%A1%80%E7%89%88%E5%AE%89%E8%A3%85-V1.md)
+---
+- [node-npm-Hardhat3-优化版全流程安装部署指南-V2
+](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/node-npm-Hardhat3-%E4%BC%98%E5%8C%96%E7%89%88%E5%85%A8%E6%B5%81%E7%A8%8B%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97-V2)
+---
 - [Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版部署指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
 ---
 - [Hardhat v2.26.3 + Node.js v20.18.0精准稳定版配置信息](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF.md)
