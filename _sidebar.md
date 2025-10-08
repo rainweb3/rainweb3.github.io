@@ -25,7 +25,7 @@
 - [node-npm-Hardhat3-基础版安装-V1](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/node-npm-Hardhat3-%E5%9F%BA%E7%A1%80%E7%89%88%E5%AE%89%E8%A3%85-V1.md)
 ---
 - [node-npm-Hardhat3-优化版全流程安装部署指南-V2
-](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/node-npm-Hardhat3-%E4%BC%98%E5%8C%96%E7%89%88%E5%85%A8%E6%B5%81%E7%A8%8B%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97-V2)
+](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/node-npm-Hardhat3-%E4%BC%98%E5%8C%96%E7%89%88%E5%85%A8%E6%B5%81%E7%A8%8B%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97-V2.md)
 ---
 - [Hardhat v2.26.3 + Node.js v20.18.0 精准稳定版部署指南](https://github.com/rainweb3/rainweb3.github.io/blob/main/web3_doc/Hardhat%20v2.26.3%20%2B%20Node.js%20v20.18.0%E7%B2%BE%E5%87%86%E7%A8%B3%E5%AE%9A%E7%89%88%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
 ---
