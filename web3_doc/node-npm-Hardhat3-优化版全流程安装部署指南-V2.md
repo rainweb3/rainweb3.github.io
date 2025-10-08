@@ -60,6 +60,13 @@ npm -v    # 预期输出: 10.9.3
 
 ## 2. 新建并初始化项目（交互式流程详解）
 
+### 注意：若存在“缓存污染”问题，通过“卸载重装命令”解决
+```bash
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+```
+
 ### 步骤 1：创建项目目录并进入
 
 ```bash
