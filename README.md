@@ -32,16 +32,16 @@ web3_doc/
 |---------|---------|------|------|
 | Web3 Basics Guide | Web3 基础知识指南 | [/web3_doc/basic_knowledge_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/basic_knowledge_guide) | ✅ 开启 |
 | Web3 Beginner's Learning Roadmap | Web3 从零开始学习路径 | [/web3_doc/basic_knowledge_guide/web3_beginner_reference_path](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/basic_knowledge_guide/web3_beginner_reference_path) | ✅ 开启 |
-| Ethereum Protocol Overview | 以太坊协议概览 | [/web3_doc/ethereum_protocol](#TODO) | ✅ 开启 |
+| Ethereum Protocol Overview | 以太坊协议概览 | [/web3_doc/ethereum_protocol](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/ethereum_protocol) | ✅ 开启 |
 | Web3 Wallets and Testnet Faucets Guide | Web3 钱包与测试币领取指南 | [/web3_doc/web3_wallet_faucet](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/web3_wallet_faucet) | ✅ 开启 |
-| Environment Setup Guide | 环境配置指南 | [/web3_doc/environmental_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide/ganache) | ✅ 开启 |
+| Environment Setup Guide | 环境配置指南 | [/web3_doc/environmental_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/environmental_guide) | ✅ 开启 |
 | Programming Language Troubleshooting Guide | 编程语言常见问题指南 | [/web3_doc/programming_language](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/programming_language) | ✅ 开启 |
 | Git Troubleshooting Guide | Git 问题指南 | [/web3_doc/git_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/git_guide) | ✅ 开启 |
 | Smart Contract Basics Guide | 智能合约知识 | [/web3_doc/smart_contract_knowledge](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/smart_contract_knowledge) | ✅ 开启 |
 | Smart Contract Deployment Guide | 智能合约部署指南 | [/web3_doc/deployment_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide) | ✅ 开启 |
 | Smart Contract Tools - Ganache | 智能合约工具使用：Ganache | [/web3_doc/deployment_guide/ganache](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide/ganache) | ✅ 开启 |
 | Smart Contract Tools - Hardhat | 智能合约工具使用：Hardhat | [/web3_doc/deployment_guide/hardhat](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide/hardhat) | ✅ 开启 |
-| Smart Contract Tools - Foundry | 智能合约工具使用：Foundry | [/web3_doc/deployment_guide/foundry](#TODO) | 🔴 未开启 |
+| Smart Contract Tools - Foundry | 智能合约工具使用：Foundry | [/web3_doc/deployment_guide/foundry](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide/foundry) | 🔴 未开启 |
 | Development Components Guide | 开发组件指南 | [/web3_doc/develop_components_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/develop_components_guide) | ✅ 开启 |
 ---
 ### 🔗 快捷链接
