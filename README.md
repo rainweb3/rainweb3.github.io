@@ -25,6 +25,7 @@ web3_doc/
 ├── git_guide/
 ├── programming_language/
 ├── smart_contract_knowledge/
+├── thought/
 └── web3_wallet_faucet/
 ```
 ---
@@ -44,6 +45,7 @@ web3_doc/
 | Smart Contract Tools - Hardhat | 智能合约工具使用：Hardhat | [/web3_doc/deployment_guide/hardhat](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide/hardhat) | ✅ 开启 |
 | Smart Contract Tools - Foundry | 智能合约工具使用：Foundry | [/web3_doc/deployment_guide/foundry](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/deployment_guide/foundry) | 🔴 未开启 |
 | Development Components Guide | 开发组件指南 | [/web3_doc/develop_components_guide](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/develop_components_guide) | ✅ 开启 |
+| My thought| 我的想法 | [/web3_doc/thought](https://github.com/rainweb3/rainweb3.github.io/tree/main/web3_doc/thought) | ✅ 开启 |
 ---
 ### 🔗 快捷链接
 [![GitHub](https://github.com/fluidicon.png)](https://github.com/rainweb3/rainweb3.github.io)
