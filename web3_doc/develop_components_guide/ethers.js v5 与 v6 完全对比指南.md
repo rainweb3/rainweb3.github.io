@@ -10,7 +10,27 @@
 
 ---
 
-## 🔍 一、总体概览：v5 vs v6 核心变化
+## 目录
+
+1. [总体概览：v5 vs v6 核心变化](#一总体概览v5-vs-v6-核心变化)
+2. [核心模块与导入方式变更](#二核心模块与导入方式变更)
+3. [Provider（提供者）变更](#三provider提供者变更)
+4. [Wallet（钱包）与 Signer（签名者）](#四wallet钱包与-signer签名者)
+5. [Contract（合约）调用变更](#五contract合约调用变更)
+6. [Gas 与交易选项（Transaction Request）变更](#六gas-与交易选项transaction-request-变更)
+7. [单位转换工具变更](#七单位转换工具变更)
+8. [ABI 编码与解码工具](#八abi-编码与解码工具)
+9. [地址与校验](#九地址与校验)
+10. [常见错误与迁移陷阱（v5 → v6）](#十常见错误与迁移陷阱v5--v6)
+11. [兼容性与共存策略](#十一兼容性与共存策略)
+12. [你可能还没问但需要知道的问题](#十二你可能还没问但需要知道的问题)
+13. [迁移 checklist（v5 → v6）](#十三迁移-checklistv5--v6)
+14. [总结：v5 vs v6 决策建议](#十四总结v5-vs-v6-决策建议)
+15. [参考资料](#十五参考资料)
+
+---
+
+## 一、总体概览：v5 vs v6 核心变化
 
 | 维度 | ethers.js v5 | ethers.js v6 |
 |------|--------------|--------------|
@@ -29,7 +49,7 @@
 
 ---
 
-## 🧱 二、核心模块与导入方式变更
+## 二、核心模块与导入方式变更
 
 ### v5 写法
 ```js
@@ -54,7 +74,7 @@ const wallet = new Wallet(privateKey, provider);
 
 ---
 
-## 🔄 三、Provider（提供者）变更
+## 三、Provider（提供者）变更
 
 ### 1. 类名变更
 | v5 | v6 |
@@ -77,7 +97,7 @@ const signer = await provider.getSigner();
 
 ---
 
-## 🔐 四、Wallet（钱包）与 Signer（签名者）
+## 四、Wallet（钱包）与 Signer（签名者）
 
 ### 1. Wallet 构造函数
 | v5 | v6 |
@@ -107,7 +127,7 @@ const signer = await provider.getSigner(); // ✅ 注意：现在是 async
 
 ---
 
-## 📦 五、Contract（合约）调用变更
+## 五、Contract（合约）调用变更
 
 ### 1. Contract 构造函数
 | v5 | v6 |
@@ -144,7 +164,7 @@ await tx.wait(); // ✅ 仍然支持
 
 ---
 
-## 💸 六、Gas 与交易选项（Transaction Request）变更
+## 六、Gas 与交易选项（Transaction Request）变更
 
 ### 1. `gasPrice` vs `maxFeePerGas` / `maxPriorityFeePerGas`
 
@@ -169,7 +189,7 @@ await contract.transfer(to, value, {
 
 ---
 
-## 🧮 七、单位转换工具变更
+## 七、单位转换工具变更
 
 ### v5
 ```js
@@ -202,7 +222,7 @@ parseUnits('1', 'gwei');
 
 ---
 
-## 🧩 八、ABI 编码与解码工具
+## 八、ABI 编码与解码工具
 
 ### v5
 ```js
@@ -223,7 +243,7 @@ coder.decode(types, data);
 
 ---
 
-## 🔗 九、地址与校验
+## 九、地址与校验
 
 ### v5
 ```js
@@ -243,7 +263,7 @@ isAddress(address);  // ✅ 同上
 
 ---
 
-## 🧯 十、常见错误与迁移陷阱（v5 → v6）
+## 十、常见错误与迁移陷阱（v5 → v6）
 
 ### 错误 1：未 `await provider.getSigner()`
 ```js
@@ -308,7 +328,7 @@ coder.encode(...);
 
 ---
 
-## 🔄 十一、兼容性与共存策略
+## 十一、兼容性与共存策略
 
 ### 是否兼容？
 - **不兼容**：v5 和 v6 **不能直接共存于同一项目**（类型冲突、API 冲突）。
@@ -324,7 +344,7 @@ coder.encode(...);
 
 ---
 
-## 🧩 十二、你可能还没问但需要知道的问题
+## 十二、你可能还没问但需要知道的问题
 
 ### 1. v6 中 `BigNumber` 还支持吗？
 - ✅ 支持，但**默认禁用**。
@@ -366,7 +386,7 @@ coder.encode(...);
 
 ---
 
-## ✅ 十三、迁移 checklist（v5 → v6）
+## 十三、迁移 checklist（v5 → v6）
 
 | 任务 | 状态 |
 |------|------|
@@ -383,7 +403,7 @@ coder.encode(...);
 
 ---
 
-## 🏁 十四、总结：v5 vs v6 决策建议
+## 十四、总结：v5 vs v6 决策建议
 
 | 场景 | 推荐版本 |
 |------|----------|
@@ -399,7 +419,8 @@ coder.encode(...);
 
 ---
 
-## 🔗 参考资料
+## 十五、参考资料
+
 - [ethers.js v6 官方文档](https://docs.ethers.org/v6/)
 - [v5 → v6 迁移指南](https://docs.ethers.org/v6/migrating/)
 - [GitHub 仓库](https://github.com/ethers-io/ethers.js)
