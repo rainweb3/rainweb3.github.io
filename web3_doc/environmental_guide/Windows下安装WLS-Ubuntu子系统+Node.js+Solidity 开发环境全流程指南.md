@@ -1,7 +1,63 @@
-# Windows 系统下搭建 WSL + Ubuntu + Node.js + Solidity 开发环境全流程指南
+# Windows 系统下搭建 WSL + Ubuntu + Node.js + Solidity 开发环境全流程指南（2025年）
 
+---
+**作者：RainWeb3**  
+---
+## 目录
+
+1. [一、安装 WSL（Windows Subsystem for Linux）](#一安装-wslwindows-subsystem-for-linux)
+   - [1. 系统要求](#1-系统要求)
+   - [2. 以管理员身份打开终端](#2-以管理员身份打开终端)
+   - [3. 执行安装命令](#3-执行安装命令)
+   - [4. 可选：安装指定 Linux 发行版](#4-可选安装指定-linux-发行版)
+   - [5. 重启电脑](#5-重启电脑)
+   - [6. 初始化 Ubuntu 子系统](#6-初始化-ubuntu-子系统)
+   - [7. 验证 WSL 安装状态](#7-验证-wsl-安装状态)
+   - [补充：若安装失败（手动启用功能）](#补充若安装失败手动启用功能)
+
+2. [二、配置 VS Code 与 WSL 联动开发](#二配置-vs-code-与-wsl-联动开发)
+   - [1. 安装 VS Code（若未安装）](#1-安装-vs-code若未安装)
+   - [2. 安装 Remote Development 插件](#2-安装-remote-development-插件)
+   - [3. 连接到 WSL 中的 Ubuntu](#3-连接到-wsl-中的-ubuntu)
+   - [4. 在 WSL 中创建项目目录](#4-在-wsl-中创建项目目录)
+
+3. [三、安装 Node.js 环境管理器：NVM](#三安装-nodejs-环境管理器nvm)
+   - [1. 安装 nvm（Node Version Manager）](#1-安装-nvmnode-version-manager)
+   - [2. 激活 nvm 配置](#2-激活-nvm-配置)
+   - [3. 验证 nvm 安装成功](#3-验证-nvm-安装成功)
+   - [4. 使用 nvm 安装 Node.js](#4-使用-nvm-安装-nodejs)
+   - [补充：升级 nvm（可选）](#补充升级-nvm可选)
+
+4. [四、配置 VS Code 支持 Solidity 和 Hardhat](#四配置-vs-code-支持-solidity-和-hardhat)
+   - [1. 安装 Solidity 相关插件](#1-安装-solidity-相关插件)
+   - [2. 设置默认格式化工具](#2-设置默认格式化工具)
+
+5. [五、安装 Yarn 包管理器（使用 Corepack）](#五安装-yarn-包管理器使用-corepack)
+   - [1. 启用 Corepack（Node.js 内置工具）](#1-启用-corepacknodejs-内置工具)
+   - [2. 验证 Yarn 安装](#2-验证-yarn-安装)
+
+6. [六、初始化项目并安装 Solidity 编译器（solc）](#六初始化项目并安装-solidity-编译器solc)
+   - [1. 初始化 yarn 项目](#1-初始化-yarn-项目)
+   - [2. 安装 solc（Solidity 编译器）](#2-安装-solcsolidity-编译器)
+   - [3. 验证 solc 版本](#3-验证-solc-版本)
+
+7. [七、编写 Solidity 合约并编译](#七编写-solidity-合约并编译)
+   - [1. 创建测试合约 `SimpleStorage.sol`](#1-创建测试合约-simplesstoragesol)
+   - [2. 手动编译合约](#2-手动编译合约)
+   - [3. 简化编译命令（通过 package.json）](#3-简化编译命令通过-packagejson)
+
+8. [八、模块系统配置（ESM 支持）](#八模块系统配置esm-支持)
+   - [1. 若使用 JavaScript 且需 `import/export`](#1-若使用-javascript-且需-importexport)
+   - [2. 若使用 TypeScript（推荐，类型安全）](#2-若使用-typescript推荐类型安全)
+
+9. [九、查缺补漏 & 常见问题](#九查缺补漏--常见问题)
+
+10. [十、总结：完整流程图](#十总结完整流程图)
+
+---
 
 ## 一、安装 WSL（Windows Subsystem for Linux）
+
 ### 1. 系统要求
 - **Windows 10 版本 2004 及以上**（Build 19041+）
 - 或 **Windows 11**
@@ -49,7 +105,7 @@ wsl --list --running
 ```
 > ✅ 成功：终端显示当前运行的 Linux 发行版（如 `Ubuntu`）。
 
-### ✅ 补充：若安装失败（手动启用功能）
+### 补充：若安装失败（手动启用功能）
 如果 `wsl --install` 执行失败，按以下步骤手动启用：
 1. 打开 **控制面板 → 程序 → 启用或关闭 Windows 功能**
 2. 勾选以下两项：
@@ -58,8 +114,10 @@ wsl --list --running
 3. 点击“确定” → 重启电脑
 4. 重启后再次运行 `wsl --install`
 
+---
 
 ## 二、配置 VS Code 与 WSL 联动开发
+
 ### 1. 安装 VS Code（若未安装）
 - 下载地址：[https://code.visualstudio.com](https://code.visualstudio.com)
 - 按向导完成安装，建议勾选“添加到 PATH”（便于终端启动）。
@@ -86,8 +144,10 @@ cd ~/solidity-project
 code .
 ```
 
+---
 
 ## 三、安装 Node.js 环境管理器：NVM
+
 ### 1. 安装 nvm（Node Version Manager）
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
@@ -127,13 +187,15 @@ node --version
 npm --version
 ```
 
-### ✅ 补充：升级 nvm（可选）
+### 补充：升级 nvm（可选）
 ```bash
 nvm upgrade
 ```
 
+---
 
 ## 四、配置 VS Code 支持 Solidity 和 Hardhat
+
 ### 1. 安装 Solidity 相关插件
 在 VS Code 扩展商店中搜索并安装以下插件：
 1. **Hardhat Solidity**（Nomic Foundation 官方提供，推荐优先使用）
@@ -155,8 +217,10 @@ nvm upgrade
 }
 ```
 
+---
 
 ## 五、安装 Yarn 包管理器（使用 Corepack）
+
 ### 1. 启用 Corepack（Node.js 内置工具）
 ```bash
 corepack enable
@@ -169,8 +233,10 @@ yarn --version
 ```
 > ✅ 成功：输出 Yarn 版本号（如 `1.22.22` 或 `4.0.2`）。
 
+---
 
 ## 六、初始化项目并安装 Solidity 编译器（solc）
+
 ### 1. 初始化 yarn 项目
 ```bash
 cd ~/solidity-project
@@ -196,8 +262,10 @@ npx solcjs --version
 yarn list solc
 ```
 
+---
 
 ## 七、编写 Solidity 合约并编译
+
 ### 1. 创建测试合约 `SimpleStorage.sol`
 在 VS Code 中新建文件 `SimpleStorage.sol`，输入以下代码：
 ```solidity
@@ -252,8 +320,10 @@ yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleSt
 yarn compile
 ```
 
+---
 
 ## 八、模块系统配置（ESM 支持）
+
 ### 1. 若使用 JavaScript 且需 `import/export`
 在 `package.json` 中添加 `"type": "module"` 声明：
 ```json
@@ -291,8 +361,10 @@ yarn add typescript ts-node @types/node --dev
 }
 ```
 
+---
 
 ## 九、查缺补漏 & 常见问题
+
 | 问题现象 | 解决方案 |
 |----------|----------|
 | 终端提示 `wsl: command not found` | 1. 确保以管理员身份运行终端；2. 手动启用 WSL 功能（参考第一章补充步骤） |
@@ -302,8 +374,10 @@ yarn add typescript ts-node @types/node --dev
 | 终端提示 `yarn: command not found` | 执行 `corepack enable` 并重启终端，或手动安装 `npm install -g yarn` |
 | Solidity 格式化不生效 | 1. 确认默认格式化工具设置为 `NomicFoundation.hardhat-solidity`；2. 重启 VS Code |
 
+---
 
 ## 十、总结：完整流程图
+
 ```mermaid
 graph TD
     A[启用WSL功能] --> B[执行 wsl --install]
@@ -321,5 +395,8 @@ graph TD
     M --> N[进入Hardhat/Dapp开发阶段]
 ```
 
+---
 
-至此，你已成功搭建 **WSL + Ubuntu + Node.js + Yarn + Solidity** 完整开发环境，可开始智能合约开发、编译与测试工作！
+✅ **至此，你已成功搭建 `WSL + Ubuntu + Node.js + Yarn + Solidity` 完整开发环境**，可开始智能合约开发、编译与测试工作！
+
+> 🚀 后续建议：可进一步集成 **Hardhat** 或 **Foundry** 框架进行本地部署、测试与调试，构建完整的 Web3 开发工作流。
