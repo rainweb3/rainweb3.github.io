@@ -1,4 +1,4 @@
-# Hardhat v2.26.3 + Node.js v20.18.0精准稳定版配置信息
+# Hardhat v2.26.3 + Node.js v20.18.0精准稳定版配置信息（2025年）
 ---
 ##  .editorconfig配置
 
