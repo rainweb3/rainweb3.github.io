@@ -1,4 +1,4 @@
-# 🛠 Ganache + VS Code WSL: Ubuntu + Solidity 智能合约开发全流程指南
+# 🛠 Ganache + VS Code WSL: Ubuntu + Solidity 智能合约开发全流程指南（2025年）
 
 本指南详细介绍了如何在 **Windows + WSL: Ubuntu** 环境下，使用 **Ganache** 本地测试链、**VS Code** 开发环境和 **Solidity** 编写、部署、测试以太坊智能合约的完整流程。
 
