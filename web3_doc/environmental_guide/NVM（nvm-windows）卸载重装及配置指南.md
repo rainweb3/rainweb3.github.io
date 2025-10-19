@@ -1,6 +1,35 @@
 # NVM（nvm-windows）卸载重装及配置指南
-
+---
+**作者：RainWeb3** 
 **更新日期：2025年10月3日**
+---
+
+## 目录
+
+1. [一、完全卸载现有 NVM 环境](#一完全卸载现有-nvm-环境)
+   - [1. 卸载 nvm-windows 程序](#1-卸载-nvm-windows-程序)
+   - [2. 清理残留文件](#2-清理残留文件)
+   - [3. 删除环境变量](#3-删除环境变量)
+
+2. [二、重新安装 NVM](#二重新安装-nvm)
+   - [1. 下载安装包](#1-下载安装包)
+   - [2. 安装步骤](#2-安装步骤)
+
+3. [三、配置环境变量](#三配置环境变量)
+
+4. [四、创建 settings.txt 配置文件](#四创建-settingstxt-配置文件)
+
+5. [五、验证安装并安装 Node.js](#五验证安装并安装-nodejs)
+   - [1. 验证 NVM 安装](#1-验证-nvm-安装)
+   - [2. 安装 Node.js 版本](#2-安装-nodejs-版本)
+   - [3. 切换 Node.js 版本](#3-切换-nodejs-版本)
+   - [4. 验证 Node.js 安装](#4-验证-nodejs-安装)
+
+6. [六、配置 npm 全局路径](#六配置-npm-全局路径)
+
+7. [七、常见问题处理](#七常见问题处理)
+
+---
 
 ## 一、完全卸载现有 NVM 环境
 
@@ -29,10 +58,12 @@ Remove-Item -Path "C:\DevTools\npm-global" -Recurse -Force
   - 删除 `NVM_HOME` 变量
   - 编辑 `Path` 变量，删除所有与 NVM/Node 相关的条目
 
+---
+
 ## 二、重新安装 NVM
 
 ### 1. 下载安装包
-- 访问 [nvm-windows  Releases](https://github.com/coreybutler/nvm-windows/releases)
+- 访问 [nvm-windows Releases](https://github.com/coreybutler/nvm-windows/releases)
 - 下载最新版 `nvm-setup.exe`
 
 ### 2. 安装步骤
@@ -40,6 +71,8 @@ Remove-Item -Path "C:\DevTools\npm-global" -Recurse -Force
   - **NVM 安装路径**：`C:\DevTools\nvm`
   - **Node.js 符号链接路径**：`C:\DevTools\nodejs-link`
 - 勾选「Add to PATH」选项，完成安装
+
+---
 
 ## 三、配置环境变量
 
@@ -52,6 +85,8 @@ Remove-Item -Path "C:\DevTools\npm-global" -Recurse -Force
    - `C:\DevTools\nodejs-link`
    - `C:\DevTools\npm-global`
    - `C:\DevTools\npm-cache`
+
+---
 
 ## 四、创建 settings.txt 配置文件
 
@@ -66,33 +101,37 @@ Remove-Item -Path "C:\DevTools\npm-global" -Recurse -Force
    npm_mirror: https://npmmirror.com/mirrors/npm/
    ```
 
+---
+
 ## 五、验证安装并安装 Node.js
 
-1. 打开管理员 PowerShell，验证 NVM 安装：
-   ```powershell
-   nvm version  # 应显示版本号
-   ```
+### 1. 验证 NVM 安装
+```powershell
+nvm version  # 应显示版本号
+```
 
-2. 安装 Node.js 版本：
-   ```powershell
-   nvm install 20.17.0  # 安装LTS版本
-   nvm install 22.8.0   # 安装最新版本
-   ```
+### 2. 安装 Node.js 版本
+```powershell
+nvm install 20.17.0  # 安装LTS版本
+nvm install 22.8.0   # 安装最新版本
+```
 
-3. 切换 Node.js 版本：
-   ```powershell
-   # 清理可能的链接残留
-   Remove-Item -Path "C:\DevTools\nodejs-link" -Recurse -Force
-   
-   # 切换到20.17.0版本
-   nvm use 20.17.0
-   ```
+### 3. 切换 Node.js 版本
+```powershell
+# 清理可能的链接残留
+Remove-Item -Path "C:\DevTools\nodejs-link" -Recurse -Force
 
-4. 验证 Node.js 安装：
-   ```powershell
-   node -v  # 应显示 v20.17.0
-   npm -v   # 应显示对应版本号
-   ```
+# 切换到20.17.0版本
+nvm use 20.17.0
+```
+
+### 4. 验证 Node.js 安装
+```powershell
+node -v  # 应显示 v20.17.0
+npm -v   # 应显示对应版本号
+```
+
+---
 
 ## 六、配置 npm 全局路径
 
@@ -106,9 +145,11 @@ npm config set prefix "C:\DevTools\npm-global"
 npm config set cache "C:\DevTools\npm-cache"
 ```
 
+---
+
 ## 七、常见问题处理
 
-1. 若出现 `NVM_SYMLINK` 错误：
+1. **若出现 `NVM_SYMLINK` 错误**：
    ```powershell
    # 手动创建符号链接
    Remove-Item -Path "C:\DevTools\nodejs-link" -Recurse -Force
@@ -118,24 +159,43 @@ npm config set cache "C:\DevTools\npm-cache"
    echo v20.17.0 > "C:\DevTools\nvm\current"
    ```
 
-2. 确保所有操作都在管理员权限终端中执行
+2. **确保所有操作都在管理员权限终端中执行**
 
-3. 若命令仍无法识别，关闭所有终端后重新打开
+3. **若命令仍无法识别，关闭所有终端后重新打开**
 
 通过以上步骤，可建立一个干净的 NVM 环境，实现 Node.js 版本的灵活管理。
 
-----
+---
 
 # NVM 多镜像源自动切换方案（手动/脚本两种实现）
 
-**更新日期：2025年10月3日**
+---
 
-NVM 原生不支持「镜像源自动优先级切换」，但可通过 **手动指定镜像** 或 **脚本自动重试** 两种方案实现类似需求。以下是完整实现指南：
+## 目录
+
+1. [一、核心需求说明](#一核心需求说明)
+2. [二、方案一：手动指定镜像（简单易用）](#二方案一手动指定镜像简单易用)
+   - [1. 配置 `settings.txt`（默认国外源）](#1-配置-settingstxt默认国外源)
+   - [2. 按优先级手动切换镜像](#2-按优先级手动切换镜像)
+3. [三、方案二：脚本自动重试（高效智能）](#三方案二脚本自动重试高效智能)
+   - [1. 创建自动安装脚本 `install-node.ps1`](#1-创建自动安装脚本-install-nodeps1)
+   - [2. 脚本使用指南](#2-脚本使用指南)
+     - [(1) 保存脚本](#1-保存脚本)
+     - [(2) 执行脚本（必须管理员权限）](#2-执行脚本必须管理员权限)
+     - [(3) 执行效果示例](#3-执行效果示例)
+   - [3. 脚本核心特点](#3-脚本核心特点)
+4. [四、注意事项](#四注意事项)
+
+---
 
 ## 一、核心需求说明
+
 目标：安装 Node.js 时优先尝试国外官方源，失败后自动切换国内镜像（阿里 → 腾讯 → 华为等），无需手动修改配置文件。
 
+---
+
 ## 二、方案一：手动指定镜像（简单易用）
+
 保留 `settings.txt` 中的默认国外源，安装时通过命令行参数手动切换国内镜像，适合偶尔安装的场景。
 
 ### 1. 配置 `settings.txt`（默认国外源）
@@ -169,7 +229,10 @@ nvm install 20.10.0 --mirror https://mirrors.huaweicloud.com/nodejs/
 nvm install 20.10.0 --mirror https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/
 ```
 
+---
+
 ## 三、方案二：脚本自动重试（高效智能）
+
 通过 PowerShell 脚本实现「失败自动切换镜像」，支持版本号、`stable`/`lts` 关键字，适合频繁安装的场景。
 
 ### 1. 创建自动安装脚本 `install-node.ps1`
@@ -241,10 +304,11 @@ exit 1
 ```
 
 ### 2. 脚本使用指南
-#### （1）保存脚本
+
+#### (1) 保存脚本
 将上述代码复制到记事本，保存为 `install-node.ps1`（如保存到 `C:\Scripts\` 目录）。
 
-#### （2）执行脚本（必须管理员权限）
+#### (2) 执行脚本（必须管理员权限）
 1. 按下 `Win + R` → 输入 `powershell` → 按 `Ctrl + Shift + Enter` 以管理员身份运行。
 2. 导航到脚本目录：`cd C:\Scripts\`。
 3. 执行安装命令：
@@ -259,7 +323,7 @@ exit 1
    .\install-node.ps1 lts
    ```
 
-#### （3）执行效果示例
+#### (3) 执行效果示例
 ```
 ===== 开始安装 Node.js：20.10.0 =====
 
@@ -289,7 +353,10 @@ nvm use 20.10.0
 - **日志清晰**：彩色输出安装状态，成功/失败一目了然。
 - **灵活扩展**：可在 `$mirrors` 数组中添加/删除镜像源。
 
+---
+
 ## 四、注意事项
+
 1. **管理员权限**：无论手动还是脚本安装，都需以管理员身份运行终端（否则可能无法创建符号链接）。
 2. **版本有效性**：安装前建议通过 [Node.js 官网](https://nodejs.org/en/download/releases/) 确认版本是否已发布。
 3. **镜像源更新**：国内镜像源通常滞后官方源几分钟到几小时，最新版本建议优先尝试官方源。
