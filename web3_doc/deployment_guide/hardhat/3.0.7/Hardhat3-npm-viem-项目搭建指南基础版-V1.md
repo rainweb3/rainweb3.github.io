@@ -88,7 +88,14 @@
 Hardhat CLI 在选择模板后会生成如下命令：
 
 ```bash
-npm install --save-dev "hardhat@3.0.7" "@nomicfoundation/hardhat-toolbox-viem@5.0.0" "@nomicfoundation/hardhat-ignition@3.0.0" "@types/node@22.8.5" "forge-std@foundry-rs/forge-std#v1.9.4" "typescript@5.8.0" "viem@2.30.0"
+npm install --save-dev \
+  "hardhat@^3.0.7" \
+  "@nomicfoundation/hardhat-toolbox-viem@^5.0.0" \
+  "@nomicfoundation/hardhat-ignition@^3.0.3" \
+  "@types/node@^22.18.11" \
+  "typescript@~5.8.0" \
+  "viem@^2.38.3" \
+  "forge-std@github:foundry-rs/forge-std#v1.9.4"
 ```
 
 > ✅ 此命令将被自动执行，无需手动输入。
@@ -218,17 +225,17 @@ Do you want to run it now? (Y/n)
 
 ### 2.4 自动安装依赖包（根据实际命令）
 
-系统将执行以下命令（与截图一致）：
+系统将执行以下命令：
 
 ```bash
 npm install --save-dev \
-  "hardhat@3.0.7" \
-  "@nomicfoundation/hardhat-toolbox-viem@5.0.0" \
-  "@nomicfoundation/hardhat-ignition@3.0.0" \
-  "@types/node@22.8.5" \
-  "forge-std@foundry-rs/forge-std#v1.9.4" \
-  "typescript@5.8.0" \
-  "viem@2.30.0"
+  "hardhat@^3.0.7" \
+  "@nomicfoundation/hardhat-toolbox-viem@^5.0.0" \
+  "@nomicfoundation/hardhat-ignition@^3.0.3" \
+  "@types/node@^22.18.11" \
+  "typescript@~5.8.0" \
+  "viem@^2.38.3" \
+  "forge-std@github:foundry-rs/forge-std#v1.9.4"
 ```
 
 > ⏱️ 安装时间：约 1–3 分钟，取决于网络速度。
@@ -334,7 +341,7 @@ Counter
 
 ### 4.1 实际项目结构
 
-根据你提供的项目结构截图，以下是**实际存在的目录与文件列表**：
+以下是**实际存在的目录与文件列表**：
 
 ```
 my-hardhat-project/
@@ -362,7 +369,6 @@ my-hardhat-project/
 ├── package.json             # 项目元信息与依赖
 ├── README.md                # 项目说明文档
 ├── tsconfig.json            # TypeScript 配置
-└── tscconfig.json           # （注意：可能是笔误，应为 tsconfig.json）
 ```
 
 > ✅ **重要说明**：
