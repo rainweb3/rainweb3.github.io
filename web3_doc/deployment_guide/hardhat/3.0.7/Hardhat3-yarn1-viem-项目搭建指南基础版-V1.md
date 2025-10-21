@@ -106,7 +106,6 @@
 > yarn hardhat --init
 > ```
 
-
 Hardhat CLI 在选择模板后会自动执行以下命令（使用 Yarn 1）：
 
 ```bash
