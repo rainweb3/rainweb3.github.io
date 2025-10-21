@@ -347,9 +347,16 @@ Counter
 以下是**实际存在的目录与文件列表**（使用 Yarn 1）：
 
 ```
-.
+my-hardhat-project/
 ├── .git/                     # Git 版本控制元数据
 ├── .yarn/				# Yarn v1 缓存与插件数据（可选，通常忽略）
+├── artifacts/               # 编译后的合约输出（由 hardhat test 自动生成）
+│   ├── build-info/          # 构建信息（ABI、字节码、源码映射等）
+│   └── contracts/           # 编译后的合约 JSON 文件（如 Counter.json）
+├── cache/                   # 编译缓存（提高下次编译速度）
+│   ├── build-info/          # 编译信息缓存
+│   ├── test-artifacts/      # 测试相关缓存
+│   └── compile-cache.json   # 编译缓存元数据
 ├── contracts/                # Solidity 智能合约源码
 │   ├── Counter.sol           # 主合约：计数器逻辑
 │   └── Counter.t.sol         # Solidity 测试合约（可选，使用 Hardhat Forge Testing 风格）
@@ -376,6 +383,14 @@ Counter
 > ✅ **重要说明**：
 >
 > - `artifacts/` 和 `cache/` 目录**不会在初始化时创建**，而是**在第一次运行测试或编译时自动生成**。
+> - 当你执行 `yarn hardhat test contracts/Counter.t.sol` 时，Hardhat 会：
+>   1. 编译 `Counter.sol`
+>   2. 将编译结果存储在 `artifacts/contracts/Counter.json`
+>   3. 生成构建信息到 `artifacts/build-info/`
+>   4. 缓存编译结果到 `cache/compile-cache.json`
+>   5. 执行测试	        `yarn hardhat test`
+>
+> > 📌 **因此，`artifacts` 和 `cache` 是“动态生成”的，仅在需要时才出现。**
 > - 使用 **Yarn 1** 时，依赖解析稳定，社区支持广泛。
 > - **`yarn.lock` 是项目依赖的唯一权威来源**，务必提交到 Git。
 
