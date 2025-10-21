@@ -72,9 +72,9 @@
 | `@nomicfoundation/hardhat-toolbox-viem` | `5.0.0` | 工具箱扩展，集成 `viem` 客户端、Etherscan 验证等 |
 | `@nomicfoundation/hardhat-ignition` | `3.0.0` | 声明式部署系统，支持模块化、可复用的合约部署流程 |
 | `typescript` | `5.8.0` | 支持在项目中使用 TypeScript 编写测试与脚本 |
-| `@types/node` | `22.8.5` | 为 Node.js API 提供类型定义，提升开发体验 |
+| `@types/node` | `22.18.11` | 为 Node.js API 提供类型定义，提升开发体验 |
 | `forge-std` | `foundry-rs/forge-std#v1.9.4` | Foundry 团队开发的标准 Solidity 库，包含 `Test` 基类、断言、模糊测试支持 |
-| `viem` | `2.30.0` | 现代化 Ethereum 客户端库，替代 `ethers.js`，轻量高效 |
+| `viem` | `2.38.3` | 现代化 Ethereum 客户端库，替代 `ethers.js`，轻量高效 |
 
 > ⚠️ 注意：
 > - 所有依赖均通过 `npm install --save-dev` 安装为 **开发依赖（devDependencies）**
