@@ -628,7 +628,8 @@ export default config;
 ---
 
 ### 5.4 解决 `lib: es2023` 编译错误（重要补充）
-
+> 若支持es2023，则不必替换
+> 
 你遇到的问题是：
 
 > `'compilerOptions'lib'` must be equal to one of the allowed values: 'ES5', 'ES6', 'ES2015', ...
