@@ -60,14 +60,6 @@
 >
 > ✅ **完全符合要求，可直接进行下一步。**
 
-> 💡 **如何安装 Yarn 1**（若尚未安装）：
-> ```bash
-> npm install yarn
-> # 或使用 corepack（Node.js 16.13+ 内置）
-> corepack enable
-> corepack prepare yarn@1 --activate
-> ```
-
 ---
 
 ### 1.2 默认依赖组件版本清单
@@ -95,11 +87,25 @@
 
 > 注意：我们采用 **Yarn 1** 的标准工作流，先安装 `hardhat`，再运行其初始化命令。
 > 执行命令：
+> 💡 **如何安装 Yarn 1**（若尚未安装）-根据需要安装：
 > ```bash
+>  卸载全局 Yarn 的命令:
+> npm uninstall -g yarn
+> 启用 Corepack（一次）:
+> corepack enable
+> 预下载 Yarn 1 最新版
+> corepack prepare yarn@1.22.19
+> 使用Yarn 1
+> 初始化 package.json：
 > yarn init -y
+> 设置使用 Yarn 1
+> npm pkg set packageManager="yarn@1.22.19"
+> 安装 Hardhat：
 > yarn add -D hardhat
+> 运行 Hardhat 初始化：
 > yarn hardhat --init
 > ```
+
 
 Hardhat CLI 在选择模板后会自动执行以下命令（使用 Yarn 1）：
 
