@@ -761,7 +761,7 @@ tsc --version
 | `npx hardhat test mocha` | 仅运行使用 Mocha + ethers.js 编写的 TypeScript 集成测试 | 仅运行 `.ts` 测试文件，执行基于 Mocha 框架的集成测试。 | 测试合约与外部交互、复杂场景模拟、跨合约调用等 | 需安装 `@nomicfoundation/hardhat-ethers` 和 `mocha`，测试文件通常为 `.ts` 后缀 |
 | `npx hardhat compile` | 手动编译所有合约 | 编译 `contracts/` 目录下的所有 Solidity 源文件，生成 ABI 和字节码，供测试和部署使用。 | 在部署或测试前手动触发编译 | 编译结果存储在 `artifacts/` 目录 |
 | `npx hardhat node` | 启动本地 Ethereum 节点（端口 8545） | 启动一个本地的、内存中的以太坊测试节点，用于快速测试和调试，无需连接外部网络。 | 本地开发、调试、模拟交易 | 默认链 ID 为 31337，提供 20 个预充值账户 |
-| `npx hardhat run scripts/send-op-tx.ts` | 运行部署脚本 | 执行指定的 TypeScript 脚本文件（如 `deploy.ts`），可用于自定义部署逻辑或与合约交互。 | 执行一次性脚本，如部署、升级、批量调用 | 脚本需导出默认函数或使用 `main()` 执行 |
+| `npx hardhat run scripts/send-op-tx.ts` | 运行部署脚本 | 执行指定的 TypeScript 脚本文件（如 `send-op-tx.ts`），可用于自定义部署逻辑或与合约交互。 | 执行一次性脚本，如部署、升级、批量调用 | 脚本需导出默认函数或使用 `main()` 执行 |
 | `npx hardhat ignition deploy ignition/modules/Counter.ts` | 将 Counter 模块部署到本地模拟链 | 使用 Hardhat Ignition 部署系统，将 `Counter.ts` 定义的部署模块运行在本地 Hardhat 网络（localhost）上，用于本地开发和调试。 | 本地开发、调试部署流程 | 默认连接到 `localhost` 网络（Hardhat 内置），无需私钥 |
 | `npx hardhat keystore set SEPOLIA_PRIVATE_KEY` | 通过 `hardhat-keystore` 插件安全地设置 Sepolia 网络的私钥配置变量 | 首次配置部署账户私钥，避免明文暴露在环境变量中 | 首次配置部署账户私钥，提高安全性 | 私钥将加密存储在 `.hardhat/keystore` 目录；需确保插件已安装 |
 | `npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts` | 将 Counter 模块部署到 Sepolia 测试网 | 将 `Counter.ts` 部署模块实际发送到以太坊 Sepolia 测试网络，需要已配置 `SEPOLIA_RPC_URL` 和 `PRIVATE_KEY`。 | 将合约部署到公共测试网进行真实环境测试 | 必须提前设置 `SEPOLIA_PRIVATE_KEY`；账户需有 Sepolia ETH 用于支付 Gas |
