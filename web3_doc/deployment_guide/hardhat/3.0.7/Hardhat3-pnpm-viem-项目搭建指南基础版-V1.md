@@ -618,6 +618,7 @@ export default config;
 ---
 
 ### 5.4 `tsconfig.json` 常见错误与修复：`lib` 字段不支持 `es2023`
+> 若支持es2023，则不必替换
 
 ❌ **错误信息解析**：
 
