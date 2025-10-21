@@ -154,7 +154,7 @@ cd my-hardhat-project
 执行以下命令启动 Hardhat 初始化向导：
 
 ```bash
-npx hardhat
+npx hardhat --init
 ```
 
 > 🔍 `npx` 会临时下载 `hardhat` 包并运行，无需全局安装。
