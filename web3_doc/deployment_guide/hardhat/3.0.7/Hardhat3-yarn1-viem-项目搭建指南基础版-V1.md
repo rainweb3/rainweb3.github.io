@@ -346,24 +346,28 @@ Counter
 
 ```
 .
-├── .git
-├── contracts/
-│   ├── Counter.sol           # Solidity 智能合约
-│   └── Counter.t.sol         # 测试用的 Solidity 合约（可选）
-├── ignition/modules/         # Ignition 模块（用于模块化部署）
-│   └── Counter.ts            # 使用 Viem 和 Ignition 定义的部署模块
-├── scripts/
-│   └── send-op-tx.ts         # 发送交易的脚本（如使用 Optimism OP Stack）
-├── test/
-│   └── Counter.ts            # 硬件测试文件（使用 Vitest 或 Hardhat Test）
-├── .editorconfig
-├── .gitattributes
-├── .gitignore
-├── hardhat.config.ts         # Hardhat 配置文件（TypeScript）
-├── package.json              # 项目依赖配置
+├── .git/                     # Git 版本控制元数据
+├── contracts/                # Solidity 智能合约源码
+│   ├── Counter.sol           # 主合约：计数器逻辑
+│   └── Counter.t.sol         # Solidity 测试合约（可选，使用 Hardhat Forge Testing 风格）
+│
+├── ignition/modules/         # Ignition 部署模块（模块化部署配置）
+│   └── Counter.ts            # 使用 Viem + Ignition 定义的部署脚本
+│
+├── scripts/                  # 自定义脚本（如发送交易、交互等）
+│   └── send-op-tx.ts         # 示例：向 Optimism OP Stack 发送交易
+│
+├── test/                     # JavaScript/TypeScript 测试文件
+│   └── Counter.ts            # 使用 Hardhat + Viem + Node.js 测试框架（如 mocha/vitest）
+│
+├── .editorconfig             # 统一编辑器代码风格配置
+├── .gitattributes            # Git 文件属性配置（如换行符处理）
+├── .gitignore                # Git 忽略文件配置
+├── hardhat.config.ts         # Hardhat 主配置文件（TypeScript 编写）
+├── package.json              # 项目元信息与依赖管理
 ├── README.md                 # 项目说明文档
-├── tsconfig.json             # TypeScript 配置
-└── yarn.lock                 # Yarn 1 锁定文件
+├── tsconfig.json             # TypeScript 编译配置
+└── yarn.lock                 # Yarn v1 锁定依赖版本（确保可复现安装）
 ```
 
 > ✅ **重要说明**：
@@ -613,6 +617,7 @@ export default config;
 
 ### 5.4 `tsconfig.json` 常见错误与修复：`lib` 字段不支持 `es2023`
 > 若支持es2023，则不必替换
+
 ❌ **错误信息解析**：
 
 你看到的提示是：
