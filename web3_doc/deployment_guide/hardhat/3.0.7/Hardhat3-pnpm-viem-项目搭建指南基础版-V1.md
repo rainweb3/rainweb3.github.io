@@ -375,6 +375,14 @@ my-hardhat-project/
 > ✅ **重要说明**：
 >
 > - `artifacts/` 和 `cache/` 目录**不会在初始化时创建**，而是**在第一次运行测试或编译时自动生成**。
+> - 当你执行 `npx hardhat test contracts/Counter.t.sol` 时，Hardhat 会：
+>   1. 编译 `Counter.sol`
+>   2. 将编译结果存储在 `artifacts/contracts/Counter.json`
+>   3. 生成构建信息到 `artifacts/build-info/`
+>   4. 缓存编译结果到 `cache/compile-cache.json`
+>   5. 执行测试	        `yarn hardhat test`
+>
+> > 📌 **因此，`artifacts` 和 `cache` 是“动态生成”的，仅在需要时才出现。**
 > - 使用 **pnpm** 时，依赖解析更严格，确保 `node_modules` 结构扁平且节省磁盘空间。
 > - **`pnpm-lock.yaml` 是项目依赖的唯一权威来源**，务必提交到 Git。
 
